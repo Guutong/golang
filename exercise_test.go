@@ -30,17 +30,17 @@ func TestGetRidOfTheFirst(t *testing.T) {
 	}
 }
 
-// func TestGetRidOfTheLast(t *testing.T) {
-// 	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
+func TestGetRidOfTheLast(t *testing.T) {
+	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
 
-// 	r := delLast(data)
+	result := delLast(data)
 
-// 	expected := []string{"go", "java", "node", "clojure", "python", "react", "angular"}
+	expected := []string{"go", "java", "node", "clojure", "python", "react", "angular"}
 
-// 	if !reflect.DeepEqual(r, expected) {
-// 		t.Errorf("%v is expected but got %v", expected, r)
-// 	}
-// }
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("%v is expected but got %v", expected, result)
+	}
+}
 
 // func TestGetRidOfTheSecond(t *testing.T) {
 // 	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
