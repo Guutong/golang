@@ -42,17 +42,17 @@ func TestGetRidOfTheLast(t *testing.T) {
 	}
 }
 
-// func TestGetRidOfTheSecond(t *testing.T) {
-// 	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
+func TestGetRidOfTheSecond(t *testing.T) {
+	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
 
-// 	r := delSecond(data)
+	result := delSecond(data)
 
-// 	expected := []string{"go", "node", "clojure", "python", "react", "angular", "vue"}
+	expected := []string{"go", "node", "clojure", "python", "react", "angular", "vue"}
 
-// 	if !reflect.DeepEqual(r, expected) {
-// 		t.Errorf("%v is expected but got %v", expected, r)
-// 	}
-// }
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("%v is expected but got %v", expected, result)
+	}
+}
 
 // func TestOnlyOddShouldReturn(t *testing.T) {
 // 	data := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
