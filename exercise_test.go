@@ -18,17 +18,17 @@ func TestAppendSlice(t *testing.T) {
 	}
 }
 
-// func TestGetRidOfTheFirst(t *testing.T) {
-// 	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
+func TestGetRidOfTheFirst(t *testing.T) {
+	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
 
-// 	r := delFirst(data)
+	result := delFirst(data)
 
-// 	expected := []string{"java", "node", "clojure", "python", "react", "angular", "vue"}
+	expected := []string{"java", "node", "clojure", "python", "react", "angular", "vue"}
 
-// 	if !reflect.DeepEqual(r, expected) {
-// 		t.Errorf("%v is expected but got %v", expected, r)
-// 	}
-// }
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("%v is expected but got %v", expected, result)
+	}
+}
 
 // func TestGetRidOfTheLast(t *testing.T) {
 // 	data := []string{"go", "java", "node", "clojure", "python", "react", "angular", "vue"}
