@@ -1,6 +1,10 @@
 package golang
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/guutong/public"
+)
 
 func TestMultipleFunc1(t *testing.T) {
 	result := public.Multiple(2, 3)
