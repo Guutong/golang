@@ -19,3 +19,13 @@ func delLast(a []string) []string {
 func delSecond(a []string) []string {
 	return append(a[:1], a[2:]...)
 }
+
+func odd(a []int) []int {
+	ret := []int{}
+	for _, v := range a {
+		if v%2 != 0 {
+			ret = append(ret, v)
+		}
+	}
+	return ret
+}
