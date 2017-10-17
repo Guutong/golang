@@ -10,7 +10,7 @@ import (
 
 // Handler
 func hello(c echo.Context) error {
-	return c.String(http.StatusOK, "Hello, World!")
+	return c.String(http.StatusOK, "Hello, World guutong!")
 }
 
 func add(c echo.Context) error {
